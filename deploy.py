@@ -246,12 +246,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--release.dir', dest='release_dir', help='path to release folder', required=True)
     parser.add_argument('--app.name', dest='app_name', help='app name that will be used as file name', required=True)
-    parser.add_argument('--changelog.file', dest='changelog_file', help='path to changelog file', required=false)
-    parser.add_argument('--template.file', dest='template_file', help='path to email template file', required=false)
+    parser.add_argument('--changelog.file', dest='changelog_file', help='path to changelog file', required=False)
+    parser.add_argument('--template.file', dest='template_file', help='path to email template file', required=False)
     parser.add_argument('--dropbox.token', dest='dropbox_token', help='dropbox access token', required=True)
     parser.add_argument('--dropbox.folder', dest='dropbox_folder', help='dropbox target folder', required=True)
-    parser.add_argument('--zapier.hook', dest='zapier_hook', help='zapier email web hook', required=false)
-    parser.add_argument('--email.to', dest='email_to', help='email recipients', required=false)
+    parser.add_argument('--zapier.hook', dest='zapier_hook', help='zapier email web hook', required=False)
+    parser.add_argument('--email.to', dest='email_to', help='email recipients', required=False)
 
     options = parser.parse_args()
 
